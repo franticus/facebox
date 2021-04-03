@@ -1,0 +1,35 @@
+.post {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 700px;
+    cursor: pointer;
+    color: #435293;
+    font-weight: bold;
+    opacity: .7;
+}
+
+.post:hover {
+    color: #435293;
+    opacity: 1;
+}
+
+.avatar img {
+    width: 100px;
+    margin: 20px;
+    opacity: 1;
+}
+
+.avatar:hover {
+}
+
+.text {
+    margin-right: 20px;
+}
+
+.like {
+    font-size: 1rem;
+    cursor: pointer;
+    color: #d76fae;
+    font-weight: bold;
+}
