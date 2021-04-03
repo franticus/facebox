@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    padding: 1rem;
+    grid-area: h;
+    background-color: #e0e2ec;
+    align-items: center;
+    font-size: 1.5rem;
+    margin: 3px 10px 0 0;
+    color: #030510;
+}
+
+.header:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+}
+
+.header img {
+    width: 30px;
+    margin: 1rem;
+}
