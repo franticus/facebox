@@ -1,21 +1,22 @@
 import React from 'react';
 import classes from './NavBar.module.css'
+import {NavLink} from "react-router-dom";
 const NavBar = () => {
     return (
         <nav className={classes.nav}>
-            <div className={`${classes.item} ${classes.active}`}>
-                <a href="/">Профиль</a>
+            <div className={classes.item}>
+                <NavLink to="/profile" activeClassName={classes.active}>Профиль</NavLink>
             </div>
             <div className={classes.item}>
-                <a href="/">Сообщения</a>
+                <NavLink to="/dialogs" activeClassName={classes.active}>Сообщения</NavLink>
 
             </div>
             <div className={classes.item}>
-                <a href="/">Лента</a>
+                <NavLink to="/music" activeClassName={classes.active}>Музыка</NavLink>
             </div>
             <br/>
             <div className={classes.item}>
-                <a href="/">Настройки</a>
+                <NavLink to="/settings" activeClassName={classes.active}>Настройки</NavLink>
             </div>
         </nav>
     );

@@ -1,0 +1,50 @@
+.dialogs {
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    background-color: #e0e2ec;
+    text-decoration: none;
+    color: #435293;
+    font-size: 1.2rem;
+}
+
+.dialog_items {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.dialog {
+    text-decoration: none;
+    color: #435293;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+}
+
+.dialog:hover {
+    background-color: #ebebf1;
+}
+
+.active {
+    background-color: #ffb7b7;
+}
+
+.dialog_message {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.message {
+    text-decoration: none;
+    color: #435293;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+    margin: 5px;
+}
+
+.message:hover {
+    background-color: #ebebf1;
+}

@@ -1,6 +1,7 @@
 .nav {
     grid-area: n;
     background-color: #e0e2ec;
+    min-height: 90vh;
 }
 
 .nav:hover {
@@ -12,7 +13,7 @@
     text-decoration: none;
     font-size: 1.5rem;
     color: #636363;
-    opacity: .5;
+    opacity: .7;
 
 }
 
@@ -20,20 +21,15 @@
     opacity: .9;
 }
 
-.item.active a {
+.item .active {
     color: #000000;
     font-size: 1.5rem;
-    opacity: .9;
+    opacity: 1;
 }
 
 @media screen and (max-width: 1280px) {
     .item a {
         font-size: 1.5rem;
 
-    }
-
-    .item.active a {
-        color: #000000;
-        font-size: 1.6rem;
     }
 }
