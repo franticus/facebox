@@ -3,9 +3,9 @@ import classes from './Post.module.css'
 
 const Post = (props) => {
 
-    function likeRandom(min, max) {
-        return Math.floor(Math.random() * (max - min) + min)
-    }
+    // function likeRandom(min, max) {
+    //     return Math.floor(Math.random() * (max - min) + min)
+    // }
 
     return (
         <div>
@@ -18,7 +18,7 @@ const Post = (props) => {
                     {`${props.text}`}
                     <br/>
                     <div className={classes.like}>
-                        <span>Нравится {likeRandom(23, 2323)} &#10084;</span>
+                        <span>Нравится {props.likesCount} &#10084;</span>
                     </div>
                 </div>
             </div>

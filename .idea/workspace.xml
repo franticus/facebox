@@ -37,7 +37,8 @@
       <option name="presentableId" value="Default" />
       <updated>1617454318382</updated>
       <workItem from="1617454321093" duration="16120000" />
-      <workItem from="1617552105034" duration="6113000" />
+      <workItem from="1617552105034" duration="6448000" />
+      <workItem from="1617634254840" duration="8893000" />
     </task>
     <servers />
   </component>
@@ -49,5 +50,21 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1617557549689" />
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1617637131752">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1617637131752" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</url>
+          <line>24</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

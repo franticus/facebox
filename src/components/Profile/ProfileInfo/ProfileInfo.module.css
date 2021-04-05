@@ -1,0 +1,22 @@
+.profileInfo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.avatarImg {
+    max-width: 100px;
+    opacity: 0.8;
+}
+
+.avatarImg:hover {
+    opacity: 0.9;
+}
+
+.avatarText {
+    font-size: 1.5rem;
+    max-width: 200px;
+    color: #435293;
+    margin-left: 20px;
+}

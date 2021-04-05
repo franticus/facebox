@@ -1,6 +1,8 @@
 import React from 'react';
 import classes from './Profile.module.css'
 import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
+
 const Profile = () => {
     return (
         <div>
@@ -8,10 +10,11 @@ const Profile = () => {
                 <div className={classes.pic}>
                     <img src="https://c.wallhere.com/photos/96/c0/ass_in_bed_blue_panties_women_model-353323.jpg!d"
                          width="100%"
-                         alt=""
+                         alt="slide"
                     />
                 </div>
-            <MyPosts/>
+                <ProfileInfo/>
+                <MyPosts/>
             </div>
 
 

@@ -10,7 +10,6 @@
 }
 
 .post:hover {
-    color: #435293;
     opacity: 1;
 }
 
@@ -28,7 +27,6 @@
 }
 
 .like {
-    font-size: 1rem;
     cursor: pointer;
     color: #d76fae;
     font-weight: bold;
