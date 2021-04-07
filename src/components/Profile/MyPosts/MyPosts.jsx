@@ -2,25 +2,7 @@ import React from 'react';
 import classes from './MyPosts.module.css'
 import Post from "./Post/Post";
 
-const MyPosts = () => {
-
-    let postsData = [
-        {
-            id: '1',
-            text: '„Каждый волен распоряжаться своей жопой, как ему хочется. Поэтому я свою поднимаю и уёбываю.“',
-            likesCount: '335',
-        },
-        {
-            id: '2',
-            text: '„Грустной жопой радостно не пукнешь.“',
-            likesCount: '633',
-        },
-        {
-            id: '3',
-            text: '„Душа не жопа — высраться не может.“',
-            likesCount: '223',
-        }
-    ]
+const MyPosts = (props) => {
 
     return (
         <div className={classes.MyPosts}>
@@ -30,7 +12,7 @@ const MyPosts = () => {
                 <button>Поделиться</button>
             </div>
             <div className={classes.posts}>
-                {postsData.map((elem, index) => {
+                {props.post.map((elem, index) => {
                     return (
                         <Post key={index}
                               id={elem.id}
