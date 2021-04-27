@@ -17,3 +17,16 @@
     width: 30px;
     margin: 1rem;
 }
+
+@media screen and (max-width: 800px) {
+    .header {
+        margin: 0;
+        padding: 10px;
+        font-size: 1rem;
+        height: 30px;
+    }
+    .header img {
+        width: 20px;
+        margin: 1rem;
+    }
+}

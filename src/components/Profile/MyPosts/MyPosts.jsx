@@ -16,13 +16,13 @@ const MyPosts = (props) => {
     let newPostElement = React.createRef();
 
     let addPost = () => {
-        props.addPost();
+        props.dispatch({type: "ADD-POST"});
     }
 
     let updateNewPostText = () => {
         let text = newPostElement.current.value;
-        props.updateNewPostText(text)
-        console.log(newPostElement.current.value)
+        let action = {type: "UPDATE-NEW-POST-TEXT", newText: text};
+        props.dispatch(action)
     }
 
     return (
@@ -30,9 +30,9 @@ const MyPosts = (props) => {
             <div className={classes.myPost}>Мои посты</div>
             <div className={classes.newPost}>
                 <textarea ref={newPostElement}
+                          onChange={updateNewPostText}
                           value={props.newPostText}
                           placeholder="О чём думаешь?)"
-                          onChange={updateNewPostText}
                 />
                 <button onClick={addPost}>Поделиться</button>
             </div>

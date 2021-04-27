@@ -30,6 +30,17 @@
 @media screen and (max-width: 1280px) {
     .item a {
         font-size: 1.5rem;
+    }
+}
 
+@media screen and (max-width: 800px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .item a {
+        font-size: 1rem;
     }
 }
