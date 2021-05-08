@@ -7,11 +7,11 @@
 
 .avatarImg {
     max-width: 100px;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 .avatarImg:hover {
-    opacity: 0.9;
+    /*opacity: 0.9;*/
 }
 
 .avatarText {

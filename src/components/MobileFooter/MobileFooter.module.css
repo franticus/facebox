@@ -1,0 +1,30 @@
+.MobileFooter {
+    position: fixed;
+    top: 93%;
+    left: 0.2%;
+    height: 70px;
+    grid-area: h;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    background-color: #ebebf1;
+    border-radius: 0;
+    font-size: 30px;
+    padding: 20px;
+    display: none;
+}
+
+.item {
+
+}
+
+.active {
+
+}
+
+@media screen and (max-width: 800px) {
+    .MobileFooter {
+        display: flex;
+        height: 7vh;
+    }
+}

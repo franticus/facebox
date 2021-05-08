@@ -6,7 +6,7 @@ const MessageItem = (props) => {
     let path = `/dialogs/user${props.id}/message${props.id}`
     return (
         <NavLink to={path} className={classes.message}>
-            {props.text + "..."}
+            {props.text}
         </NavLink>
     )
 };

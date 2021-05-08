@@ -11,11 +11,11 @@
 .pic {
     height: 400px;
     overflow: hidden;
-    opacity: 0.7;
+    /*opacity: 0.7;*/
 }
 
 .pic:hover {
-    opacity: 0.9;
+    /*opacity: 0.9;*/
 }
 
 .pic img {

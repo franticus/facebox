@@ -29,6 +29,7 @@
 }
 
 .newPost button:hover {
+    cursor: pointer;
     background-color: #435293;
     color: white;
     outline: none;

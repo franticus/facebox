@@ -6,7 +6,7 @@
     cursor: pointer;
     color: #435293;
     font-weight: bold;
-    opacity: .7;
+    /*opacity: .7;*/
 }
 
 .post:hover {
@@ -20,6 +20,7 @@
 }
 
 .avatar:hover {
+    opacity: 1;
 }
 
 .text {

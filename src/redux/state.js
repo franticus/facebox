@@ -1,3 +1,9 @@
+const ADD_POST = 'ADD-POST';
+const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
+
+const ADD_MESSAGE = 'ADD-MESSAGE';
+const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+
 let store = {
     _state: {
         messagePage: {
@@ -13,6 +19,7 @@ let store = {
                 {id: 3, text: 'Хочу пиццу'},
                 {id: 4, text: 'Хочу Вову'}
             ],
+            newMessageText: '',
         },
         profilePage: {
             postsData: [
@@ -33,7 +40,7 @@ let store = {
                 }
             ],
             newPostText: '',
-        }
+        },
     },
     _callSubscriber() {
         console.log('State changed')
@@ -45,26 +52,62 @@ let store = {
     subscribe(observer) {
         this._callSubscriber = observer;
     },
-
+    getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    },
     dispatch(action) {
-        if (action.type === "ADD-POST") {
-            function getRandomInt(max) {
-                return Math.floor(Math.random() * max);
+        if (action.type === ADD_POST) {
+            if (this._state.profilePage.newPostText === '') {
+                console.log('empty textarea')
+                return;
             }
             let newPost = {
                 id: 4,
                 text: `„${this._state.profilePage.newPostText}“`,
-                likesCount: getRandomInt(100)
+                likesCount: this.getRandomInt(100)
             };
             this._state.profilePage.postsData.unshift(newPost);
             this._state.profilePage.newPostText = '';
             this._callSubscriber(this._state);
-        } else if (action.type === "UPDATE-NEW-POST-TEXT") {
+        } else if (action.type === UPDATE_NEW_POST_TEXT) {
             this._state.profilePage.newPostText = action.newText;
+            this._callSubscriber(this._state);
+
+        } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
+            this._state.messagePage.newMessageText = action.newText;
+            this._callSubscriber(this._state);
+        } else if (action.type === ADD_MESSAGE) {
+            if (this._state.messagePage.newMessageText === '') {
+                console.log('empty textarea')
+                return
+            }
+            let newMessage = {
+                id: 7,
+                text: this._state.messagePage.newMessageText
+            };
+            this._state.messagePage.messagesData.push(newMessage);
+            this._state.messagePage.newMessageText = '';
+            console.log(this._state.messagePage.newMessageText)
             this._callSubscriber(this._state);
         }
     }
 }
+
+export const addPostCreator = () => ({
+    type: ADD_POST
+})
+export const newPostElementCreator = (text) => ({
+    type: UPDATE_NEW_POST_TEXT,
+    newText: text
+})
+
+export const addMessageCreator = () => ({
+    type: ADD_MESSAGE
+})
+export const newMessageElementCreator = (text) => ({
+    type: UPDATE_NEW_MESSAGE_TEXT,
+    newText: text
+})
 
 export default store;
 window.state = store;

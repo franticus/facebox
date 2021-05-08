@@ -16,11 +16,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JS\inass\src\components\Profile" />
       <recent name="D:\JS\inass\src\components\NavBar" />
@@ -48,7 +51,9 @@
       <workItem from="1618397004935" duration="14737000" />
       <workItem from="1618478336819" duration="2113000" />
       <workItem from="1619006667666" duration="8382000" />
-      <workItem from="1619518534038" duration="9153000" />
+      <workItem from="1619518534038" duration="9983000" />
+      <workItem from="1619629711611" duration="1300000" />
+      <workItem from="1620449739161" duration="29261000" />
     </task>
     <servers />
   </component>
@@ -56,6 +61,10 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620472081055">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1620472081055" />
     <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619007094093">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -77,10 +86,34 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</url>
+          <line>25</line>
           <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>78</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>71</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>58</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <line>75</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
