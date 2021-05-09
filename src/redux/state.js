@@ -1,8 +1,6 @@
-const ADD_POST = 'ADD-POST';
-const UPDATE_NEW_POST_TEXT = 'UPDATE-NEW-POST-TEXT';
-
-const ADD_MESSAGE = 'ADD-MESSAGE';
-const UPDATE_NEW_MESSAGE_TEXT = 'UPDATE-NEW-MESSAGE-TEXT';
+import profileReducer from "./profile-reducer";
+import dialogsReducer from "./dialogs-reducer";
+import newsReducer from "./news-reducer";
 
 let store = {
     _state: {
@@ -41,6 +39,7 @@ let store = {
             ],
             newPostText: '',
         },
+        newsPage: {}
     },
     _callSubscriber() {
         console.log('State changed')
@@ -55,59 +54,16 @@ let store = {
     getRandomInt(max) {
         return Math.floor(Math.random() * max);
     },
-    dispatch(action) {
-        if (action.type === ADD_POST) {
-            if (this._state.profilePage.newPostText === '') {
-                console.log('empty textarea')
-                return;
-            }
-            let newPost = {
-                id: 4,
-                text: `„${this._state.profilePage.newPostText}“`,
-                likesCount: this.getRandomInt(100)
-            };
-            this._state.profilePage.postsData.unshift(newPost);
-            this._state.profilePage.newPostText = '';
-            this._callSubscriber(this._state);
-        } else if (action.type === UPDATE_NEW_POST_TEXT) {
-            this._state.profilePage.newPostText = action.newText;
-            this._callSubscriber(this._state);
 
-        } else if (action.type === UPDATE_NEW_MESSAGE_TEXT) {
-            this._state.messagePage.newMessageText = action.newText;
-            this._callSubscriber(this._state);
-        } else if (action.type === ADD_MESSAGE) {
-            if (this._state.messagePage.newMessageText === '') {
-                console.log('empty textarea')
-                return
-            }
-            let newMessage = {
-                id: 7,
-                text: this._state.messagePage.newMessageText
-            };
-            this._state.messagePage.messagesData.push(newMessage);
-            this._state.messagePage.newMessageText = '';
-            console.log(this._state.messagePage.newMessageText)
-            this._callSubscriber(this._state);
-        }
+    dispatch(action) {
+
+        this._state.profilePage = profileReducer(this._state.profilePage, action);
+        this._state.messagePage = dialogsReducer(this._state.messagePage, action);
+        this._state.newsPage = newsReducer(this._state.newsPage, action);
+
+        this._callSubscriber(this._state);
     }
 }
-
-export const addPostCreator = () => ({
-    type: ADD_POST
-})
-export const newPostElementCreator = (text) => ({
-    type: UPDATE_NEW_POST_TEXT,
-    newText: text
-})
-
-export const addMessageCreator = () => ({
-    type: ADD_MESSAGE
-})
-export const newMessageElementCreator = (text) => ({
-    type: UPDATE_NEW_MESSAGE_TEXT,
-    newText: text
-})
 
 export default store;
 window.state = store;
