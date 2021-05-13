@@ -1,11 +1,10 @@
 import React from 'react';
 import classes from './MyPosts.module.css'
 import Post from "./Post/Post";
-import {addPostCreator, newPostElementCreator} from "../../../redux/profile-reducer";
 
 const MyPosts = (props) => {
 
-    let postElement = props.post.map((elem, index) => {
+    let postElement = props.posts.map((elem, index) => {
         return (
             <Post key={index}
                   id={elem.id}
@@ -15,13 +14,12 @@ const MyPosts = (props) => {
     })
 
     let newPostElement = React.createRef();
-    let addPost = () => {
-        props.dispatch(addPostCreator());
+    let onAddPost = () => {
+        props.addPost();
     }
-    let updateNewPostText = () => {
+    let onPostChange = () => {
         let text = newPostElement.current.value;
-        let action = newPostElementCreator(text);
-        props.dispatch(action)
+        props.updateNewPostText(text)
     }
 
     return (
@@ -29,11 +27,11 @@ const MyPosts = (props) => {
             <div className={classes.myPost}>Мои посты</div>
             <div className={classes.newPost}>
                 <textarea ref={newPostElement}
-                          onChange={updateNewPostText}
+                          onInput={onPostChange}
                           value={props.newPostText}
                           placeholder="О чём думаешь?)"
                 />
-                <button onClick={addPost}>Поделиться</button>
+                <button onClick={onAddPost}>Поделиться</button>
             </div>
             <div className={classes.posts}>
                 {postElement}

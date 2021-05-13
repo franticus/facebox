@@ -6,36 +6,31 @@ import {addMessageCreator, newMessageElementCreator} from "../../redux/dialogs-r
 
 const Dialogs = (props) => {
 
-    let dialogsElements = props.state.dialogsData.map((elem, index) => {
+    let state = props.messagePage
+
+    let dialogsElements = state.dialogsData.map((elem, index) => {
         return (
             <DialogItem key={index}
                         name={elem.name}
                         id={elem.id}/>
         )
     })
-    let messageElements = props.state.messagesData.map((elem, index) => {
+    let messageElements = state.messagesData.map((elem, index) => {
         return (
             <MessageItem key={index}
                          text={elem.text}
                          id={elem.id}/>
         )
     })
+    let newMessageElement = state.newMessageText;
 
-    let newMessageElement = React.createRef();
     let addMessage = () => {
-        props.dispatch(addMessageCreator())
+        props.sendMessage();
     }
-    let updateNewMessageText = () => {
-        let text = newMessageElement.current.value;
-        let action = newMessageElementCreator(text)
-        props.dispatch(action)
+    let onMessageChange = (e) => {
+        const text = e.target.value;
+        props.updateNewMessageText(text);
     }
-
-    document.addEventListener("keydown", function (e) {
-        if (e.code === 'Enter') {
-            props.dispatch(addMessageCreator())
-        }
-    })
 
         return (
             <>
@@ -48,9 +43,8 @@ const Dialogs = (props) => {
                     </div>
                 </div>
                 <div className={classes.newMessage}>
-                <textarea ref={newMessageElement}
-                          onChange={updateNewMessageText}
-                          value={props.state.newMessageText}
+                <textarea onChange={onMessageChange}
+                          value={state.newMessageText}
                           placeholder={"Напишите сообщение"}
                           id='area'
                 />

@@ -1,3 +1,87 @@
 .NewsWrapper {
     text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: .3s;
+    color: #435293;
+}
+
+.NewsWrapper :hover {
+    transition-duration: .3s;
+}
+
+.ApiImg {
+    height: 500px;
+    width: 500px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.ApiImg:hover {
+    transform: scale3d(1.01, 1.01, 10);
+    cursor: pointer;
+}
+
+.img {
+    min-width: 100%;
+    height: 100%;
+}
+
+.ApiPostFooter {
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    border-radius: 1px;
+}
+
+.PostContainer {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    height: 540px;
+    width: 510px;
+}
+
+.NewsWrapper button {
+    margin: 10px;
+    background-color: rgba(90, 120, 201, 0.07);
+    padding: 5px;
+    width: 70px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.NewsWrapper button:hover {
+    cursor: pointer;
+    background-color: #435293;
+    color: white;
+    outline: none;
+}
+
+@media screen and (max-width: 600px) {
+    .ApiImg {
+        height: 300px;
+        width: 300px;
+    }
+    .PostContainer {
+        margin-bottom: 20px;
+        height: 340px;
+        width: 310px;
+    }
+    .ApiPostFooter {
+        width: 300px;
+    }
+
 }

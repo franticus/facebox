@@ -16,19 +16,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/redux" />
+    <property name="js.last.introduce.type" value="LET" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JS\inass\src\redux" />
-      <recent name="D:\JS\inass\src\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src" />
       <recent name="D:\JS\inass\src\components\Profile" />
       <recent name="D:\JS\inass\src\components\NavBar" />
       <recent name="D:\JS\inass\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src\components\Dialogs" />
+      <recent name="D:\JS\inass\src\components\Profile\MyPosts" />
+      <recent name="D:\JS\inass\src\assets\LastFmAPI" />
+      <recent name="D:\JS\inass\src\redux" />
+      <recent name="D:\JS\inass\src\components" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -55,7 +61,15 @@
       <workItem from="1619518534038" duration="9983000" />
       <workItem from="1619629711611" duration="1300000" />
       <workItem from="1620449739161" duration="34397000" />
-      <workItem from="1620544615854" duration="6229000" />
+      <workItem from="1620544615854" duration="6887000" />
+      <workItem from="1620630214840" duration="4033000" />
+      <workItem from="1620654065121" duration="1335000" />
+      <workItem from="1620734730337" duration="618000" />
+      <workItem from="1620740504680" duration="4000" />
+      <workItem from="1620797474021" duration="1206000" />
+      <workItem from="1620827354809" duration="31434000" />
+      <workItem from="1620861001909" duration="666000" />
+      <workItem from="1620888042694" duration="27937000" />
     </task>
     <servers />
   </component>
@@ -89,32 +103,45 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</url>
-          <line>25</line>
+          <line>27</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>9</line>
-          <properties lambdaOrdinal="-1" />
+          <line>30</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>22</line>
-          <properties lambdaOrdinal="-1" />
+          <line>43</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
-          <line>57</line>
-          <properties lambdaOrdinal="-1" />
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
+          <line>20</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/state.js</url>
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>4</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/dialogs-reducer.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
+          <line>6</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
+          <line>10</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

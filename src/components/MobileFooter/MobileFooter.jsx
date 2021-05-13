@@ -12,7 +12,7 @@ const MobileFooter = () => {
             </div>
             <div className={classes.item}>
                 <NavLink to="/news" activeClassName={classes.active}>
-                    <i className="fa fa-rss-square" aria-hidden="true"></i></NavLink>
+                    <i className="fa fa-heart" aria-hidden="true"></i></NavLink>
             </div>
             <div className={classes.item}>
                 <NavLink to="/dialogs" activeClassName={classes.active}>
