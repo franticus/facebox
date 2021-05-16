@@ -1,0 +1,49 @@
+.UsersPageWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #435293;
+}
+
+.usersWrapper {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+}
+
+.title {
+    color: #435293;
+    text-align: center;
+}
+
+
+.userPhoto {
+    cursor: pointer;
+    width: 100px;
+}
+
+.usersWrapper button {
+    background-color: rgba(90, 120, 201, 0.07);
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    outline: none;
+}
+
+.usersWrapper button:hover {
+    cursor: pointer;
+    background-color: #435293;
+    color: white;
+    outline: none;
+}

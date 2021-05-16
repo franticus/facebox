@@ -13,21 +13,18 @@ const MyPosts = (props) => {
         )
     })
 
-    let newPostElement = React.createRef();
     let onAddPost = () => {
         props.addPost();
     }
-    let onPostChange = () => {
-        let text = newPostElement.current.value;
+    let onPostChange = (e) => {
+        const text = e.target.value;
         props.updateNewPostText(text)
     }
 
     return (
         <div className={classes.MyPosts}>
-            <div className={classes.myPost}>Мои посты</div>
             <div className={classes.newPost}>
-                <textarea ref={newPostElement}
-                          onInput={onPostChange}
+                <textarea onInput={onPostChange}
                           value={props.newPostText}
                           placeholder="О чём думаешь?)"
                 />

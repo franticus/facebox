@@ -2,7 +2,6 @@ import React from 'react';
 import classes from './Dialogs.module.css'
 import DialogItem from "./DialogItem/DialogItem";
 import MessageItem from "./MessageItem/MessageItem";
-import {addMessageCreator, newMessageElementCreator} from "../../redux/dialogs-reducer";
 
 const Dialogs = (props) => {
 
@@ -22,7 +21,6 @@ const Dialogs = (props) => {
                          id={elem.id}/>
         )
     })
-    let newMessageElement = state.newMessageText;
 
     let addMessage = () => {
         props.sendMessage();
@@ -33,7 +31,10 @@ const Dialogs = (props) => {
     }
 
         return (
-            <>
+            <div>
+                <div className={classes.title}>
+                    <h1>Сообщения</h1>
+                </div>
                 <div className={classes.dialogs}>
                     <div className={classes.dialog_items}>
                         {dialogsElements}
@@ -50,7 +51,7 @@ const Dialogs = (props) => {
                 />
                     <button onClick={addMessage}>Отправить</button>
                 </div>
-            </>
+            </div>
         );
     }
     ;

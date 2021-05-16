@@ -20,7 +20,7 @@ const MobileFooter = () => {
                 </NavLink>
             </div>
             <div className={classes.item}>
-                <NavLink to="/music" activeClassName={classes.active}>
+                <NavLink to="/users" activeClassName={classes.active}>
                     <i className="fa fa-music" aria-hidden="true"></i>
                 </NavLink>
             </div>

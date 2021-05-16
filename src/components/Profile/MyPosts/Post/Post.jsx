@@ -1,5 +1,7 @@
 import React from 'react';
 import classes from './Post.module.css'
+// import userFemale from '../../../../assets/img/user_female.png'
+import nastyAvatar from '../../../../assets/img/nastyAvatar.jpg'
 
 const Post = (props) => {
 
@@ -11,7 +13,7 @@ const Post = (props) => {
         <div>
             <div className={classes.post}>
                 <div className={classes.avatar}>
-                    <img src="https://i.pinimg.com/originals/83/2e/c5/832ec56631038bb209bb41bf4f1e080b.jpg"
+                    <img src={nastyAvatar}
                          alt=""/>
                 </div>
                 <div className={classes.text}>

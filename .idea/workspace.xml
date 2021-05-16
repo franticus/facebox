@@ -17,24 +17,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Dialogs" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src\assets" />
+      <recent name="D:\JS\inass\src\components\UsersPage" />
+      <recent name="D:\JS\inass\src\components\News" />
+      <recent name="D:\JS\inass\src\components\Dialogs" />
+      <recent name="D:\JS\inass\src\components\Profile\MyPosts" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src\assets\img" />
       <recent name="D:\JS\inass\src" />
       <recent name="D:\JS\inass\src\components\Profile" />
       <recent name="D:\JS\inass\src\components\NavBar" />
       <recent name="D:\JS\inass\src\components\Header" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JS\inass\src\components\Dialogs" />
-      <recent name="D:\JS\inass\src\components\Profile\MyPosts" />
-      <recent name="D:\JS\inass\src\assets\LastFmAPI" />
-      <recent name="D:\JS\inass\src\redux" />
-      <recent name="D:\JS\inass\src\components" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -69,7 +70,10 @@
       <workItem from="1620797474021" duration="1206000" />
       <workItem from="1620827354809" duration="31434000" />
       <workItem from="1620861001909" duration="666000" />
-      <workItem from="1620888042694" duration="27937000" />
+      <workItem from="1620888042694" duration="32347000" />
+      <workItem from="1620978064485" duration="38084000" />
+      <workItem from="1621081381173" duration="10583000" />
+      <workItem from="1621141462913" duration="4126000" />
     </task>
     <servers />
   </component>
@@ -77,35 +81,38 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620472081055">
+    <state x="369" y="426" key="#Custom_Plugin_Repositories" timestamp="1621013573105">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1620472081055" />
-    <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1619007094093">
+    <state x="369" y="426" key="#Custom_Plugin_Repositories/0.0.1920.1050@0.0.1920.1050" timestamp="1621013573105" />
+    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620996844728">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1619007094093" />
-    <state x="0" y="173" key="SettingsEditor" timestamp="1619518625113">
+    <state x="0" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1620996844728" />
+    <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1621009347619">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="0" y="173" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1619518625113" />
+    <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1621009347619" />
+    <state x="0" y="173" key="SettingsEditor" timestamp="1621013720805">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="0" y="173" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1621013720805" />
+    <state x="176" y="270" width="607" height="516" key="find.popup" timestamp="1620992236249">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="176" y="270" width="607" height="516" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1620992236249" />
     <state x="66" y="247" key="run.anything.popup" timestamp="1618413297187">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1618413297187" />
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1617637131752">
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1621145218304">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1617637131752" />
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621145218304" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx</url>
-          <line>27</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
           <line>30</line>
@@ -113,7 +120,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>43</line>
+          <line>41</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -134,13 +141,11 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>6</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>10</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
       </breakpoints>

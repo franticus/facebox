@@ -3,13 +3,12 @@ import './App.css';
 import Header from "./components/Header/Header";
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
-import Dialogs from "./components/Dialogs/Dialogs";
 import MobileFooter from "./components/MobileFooter/MobileFooter";
 import {Route} from "react-router-dom";
-import News from "./components/News/News";
-import MusicPage from "./components/MusicPage/MusicPage";
 import SettingsPage from "./components/SettingsPage/SettingsPage";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
+import NewsContainer from "./components/News/NewsContainer";
+import UsersPageContainer from "./components/UsersPage/UsersPageContainer";
 
 const App = (props) => {
     return (
@@ -17,20 +16,11 @@ const App = (props) => {
             <Header/>
             <NavBar/>
             <div className={'app-wrapper-content'}>
-                <Route exact path='/' render={() => <Profile
-                    store={props.store}
-                />}/>
-                <Route path='/profile' render={() => <Profile
-                    store={props.store}
-                />}/>
-                <Route path='/dialogs' render={() => <DialogsContainer
-                    store={props.store}
-                />}/>
-                <Route path='/news' render={() => <News
-                    catsData={props.state.newsPage.catsData}
-                    dispatch={props.dispatch}
-                />}/>
-                <Route path='/music' render={() => <MusicPage/>}/>
+                <Route exact path='/' render={() => <Profile/>}/>
+                <Route path='/profile' render={() => <Profile/>}/>
+                <Route path='/dialogs' render={() => <DialogsContainer/>}/>
+                <Route path='/news' render={() => <NewsContainer/>}/>
+                <Route path='/users' render={() => <UsersPageContainer/>}/>
                 <Route path='/settings' render={() => <SettingsPage/>}/>
                 <MobileFooter/>
             </div>

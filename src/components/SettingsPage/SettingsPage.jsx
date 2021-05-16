@@ -1,10 +1,12 @@
 import React from 'react';
 import classes from './SettingsPage.module.css'
+import setImg from '../../assets/img/settings.gif'
 
 const SettingsPage = (props) => {
     return (
         <div className={classes.SettingsPageWrapper}>
-            <h1>Settings Page *=</h1>
+            <h1>Settings Page</h1>
+            <img src={setImg} alt="set"/>
         </div>
     );
 };

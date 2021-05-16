@@ -51,7 +51,7 @@
     transition: background-color 0.6s ease-in-out;
 }
 
-textarea:focus {
+.MyPosts textarea:focus {
     background: none repeat scroll 0 0 #FFFFFF;
     outline-width: 0;
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import classes from './News.module.css'
 import NewsItem from "./NewsItem/NewsItem";
-import {addCatsPostCreator} from "../../redux/news-reducer";
 
 const News = (props) => {
+
     let catsElement = props.catsData.map((elem, index) => {
         return (
             <NewsItem key={index}
@@ -14,31 +14,17 @@ const News = (props) => {
         )
     })
 
-    let onclickCats = () => {
-        let feedsCAts = setInterval(() => {
-            props.dispatch(addCatsPostCreator())
-        }, 1000)
-        setTimeout(() => {
-            clearInterval(feedsCAts)
-        }, 10000)
-    }
-
-    let onclickCatsDown = () => {
-        window.scrollBy(0, 100000);
-    }
-    let onclickCatsUp = () => {
-        window.scrollBy(0, -100000);
+    let onClickCats = () => {
+        props.onClickCats()
     }
 
     return (
         <div className={classes.NewsWrapper}>
-            <button onClick={onclickCatsDown}>Вниз</button>
-            <h1>API Лента Котов</h1>
+            <h1>API Лента</h1>
             <div>
                 {catsElement}
             </div>
-            <button onClick={onclickCats}>Ещё котов!</button>
-            <button onClick={onclickCatsUp}>Вверх!</button>
+            <button onClick={onClickCats}>Ещё пост</button>
         </div>
     );
 }

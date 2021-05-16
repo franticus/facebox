@@ -9,17 +9,17 @@ let initialState = {
     postsData: [
         {
             id: 1,
-            text: '„Каждый волен распоряжаться своей жопой, как ему хочется. Поэтому я свою поднимаю и уёбываю.“',
+            text: '„Все, что моя мама говорила мне о сексе – так это то, что мужчина должен быть сверху, а женщина снизу. Наверное, поэтому первые три года мы с мужем спали на двухэтажной кровати“',
             likesCount: '335',
         },
         {
             id: 2,
-            text: '„Грустной жопой радостно не пукнешь.“',
+            text: '„Проще расстаться с человеком, чем с иллюзиями на его счёт.“',
             likesCount: '633',
         },
         {
             id: 3,
-            text: '„Душа не жопа — высраться не может.“',
+            text: '„Муж – это парень, который всегда скажет, что вы переборщили с помадой“',
             likesCount: '223',
         }
     ],
@@ -38,12 +38,10 @@ const profileReducer = (state = initialState, action) => {
                 text: `„${state.newPostText}“`,
                 likesCount: getRandomInt(1000)
             };
-            state.postsData.unshift(newPost);
-            state.newPostText = '';
-            return state;
-        case UPDATE_NEW_POST_TEXT:
-            state.newPostText = action.newText;
-            return state;
+            return  {...state, postsData: [newPost, ...state.postsData], newPostText: ''}
+        case UPDATE_NEW_POST_TEXT: {
+            return {...state, newPostText: action.newText};
+        }
         default:
             return state;
     }
