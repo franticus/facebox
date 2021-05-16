@@ -6,6 +6,7 @@
 }
 
 .avatarImg {
+    margin-left: 9px;
     max-width: 100px;
     /*opacity: 0.8;*/
 }
@@ -19,4 +20,13 @@
     max-width: 200px;
     color: #435293;
     margin-left: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .avatarText {
+        font-size: 10px;
+    }
+    .avatarImg {
+        width: 50px;
+    }
 }

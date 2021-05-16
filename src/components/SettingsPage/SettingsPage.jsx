@@ -6,7 +6,7 @@ const SettingsPage = (props) => {
     return (
         <div className={classes.SettingsPageWrapper}>
             <h1>Settings Page</h1>
-            <img src={setImg} alt="set"/>
+            <img src={setImg} width='30%' alt="set"/>
         </div>
     );
 };

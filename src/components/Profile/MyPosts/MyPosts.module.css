@@ -59,3 +59,15 @@
 .posts {
     margin: 10px;
 }
+
+@media screen and (max-width: 500px) {
+    .MyPosts textarea {
+        max-width: 300px;
+        min-height: 50px;
+        font-size: 10px;
+    }
+    .newPost button {
+        font-size: 10px;
+        max-width: 70px;
+    }
+}

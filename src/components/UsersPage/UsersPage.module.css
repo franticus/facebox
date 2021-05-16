@@ -47,3 +47,19 @@
     color: white;
     outline: none;
 }
+
+@media screen and (max-width: 500px) {
+    .usersWrapper {
+        font-size: 12px;
+    }
+    .userPhoto {
+        margin-left: 10px;
+        cursor: pointer;
+        width: 50px;
+    }
+    .usersWrapper button {
+        font-size: 10px;
+        width: 70px;
+        height: 30px;
+    }
+}
