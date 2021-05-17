@@ -3,19 +3,14 @@ import classes from './Profile.module.css'
 import ProfileInfo from "./ProfileInfo/ProfileInfo";
 import MyPostsContainer from "./MyPosts/MyPostsContainer";
 import mainImg from '../../assets/img/main_page_img.jpeg'
-// import {addCatsPostCreator} from "../../redux/news-reducer";
+import Preloader from "../Common/Preloader/Preloader";
 
 
-const Profile = () => {
+const Profile = (props) => {
 
-    // document.addEventListener("DOMContentLoaded", function (event) {
-    //     let feedsCAts = setInterval(() => {
-    //         props.store.dispatch(addCatsPostCreator())
-    //     }, 1000)
-    //     setTimeout(() => {
-    //         clearInterval(feedsCAts)
-    //     }, 10000)
-    // });
+    if(!props.profile) {
+        return <Preloader/>
+    }
 
     return (
         <div>
@@ -26,7 +21,7 @@ const Profile = () => {
                          alt="slide"
                     />
                 </div>
-                <ProfileInfo/>
+                <ProfileInfo profile={props.profile}/>
                 <MyPostsContainer/>
             </div>
 

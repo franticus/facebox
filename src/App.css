@@ -26,6 +26,7 @@ body{
     grid-template-columns: 2fr 10fr;
 
     list-style: none;
+
 }
 @media screen and (max-width: 800px) {
     .app-wrapper {
@@ -40,7 +41,7 @@ body{
 .app-wrapper-content {
     grid-area: c;
     background-color: #e0e2ec;
-    min-height: 90vh;
+    min-height: 80vh;
 }
 
 .app-wrapper-content:hover {

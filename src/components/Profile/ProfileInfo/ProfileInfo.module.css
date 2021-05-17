@@ -22,6 +22,8 @@
     margin-left: 20px;
 }
 
+
+
 @media screen and (max-width: 500px) {
     .avatarText {
         font-size: 10px;
