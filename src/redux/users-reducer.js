@@ -6,51 +6,10 @@ const SET_TOTAL_USERS_COUNT = 'SET-TOTAL-USERS-COUNT'
 const TOGGLE_IS_FETCHING = 'TOGGLE-IS-FETCHING'
 
 let initialState = {
-    users: [
-        // {name: 'Sergey',
-        //     id: 124434544,
-        //     photos: {
-        //     small:null
-        //     }, status: null, followed: false},
-        // {name: 'Roman',
-        //     id: 12345334,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Anastasia',
-        //     id: 123433,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Random',
-        //     id: 843433,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Dmitry',
-        //     id: 1243453444,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Natalia',
-        //     id: 1233254,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Polina',
-        //     id: 12325433,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false},
-        // {name: 'Vadim',
-        //     id: 8434352543,
-        //     photos: {
-        //         small:null
-        //     }, status: null, followed: false}
-    ],
+    users: [],
     pageSize: 5,
     totalUsersCount: 0,
-    currentPage: 1,
+    currentPage: 2301,
     isFetching: false
 }
 

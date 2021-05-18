@@ -1,6 +1,7 @@
 import React from "react";
 import classes from './UsersPage.module.css'
 import userImg from '../../assets/img/user_male.png'
+import {NavLink} from "react-router-dom";
 
 const Users = (props) => {
 
@@ -15,11 +16,11 @@ const Users = (props) => {
             <h1>Найти друзей</h1>
         </div>
         <div className={classes.pagination}>
-            {pages.slice(0, 10).map((p, i) => {
+            {pages.slice(2300, 2310).map((p, i) => {
                 return <button
                     key={i}
                     onClick={() => {props.onPageChanged(p)}}
-                    className={props.currentPage === p ? classes.activePageNum : null}>{p}</button>
+                    className={props.currentPage === p ? classes.activePageNum : null}>{p-2300}</button>
             })} . . .
 
         </div>
@@ -27,11 +28,13 @@ const Users = (props) => {
             props.users.map(u => <div className={classes.usersWrapper} key={u.id}>
             <span>
                 <div>
+                    <NavLink to={'profile/' + u.id}>
                     <img className={classes.userPhoto}
                          src={u.photos.small != null
                              ? u.photos.small
                              : userImg}
                          alt="avatar"/>
+                    </NavLink>
                 </div>
                 <div>
                     {u.followed

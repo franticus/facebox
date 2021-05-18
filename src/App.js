@@ -17,7 +17,7 @@ const App = (props) => {
             <NavBar/>
             <div className={'app-wrapper-content'}>
                 <Route exact path='/' render={() => <ProfileContainer/>}/>
-                <Route path='/profile' render={() => <ProfileContainer/>}/>
+                <Route path='/profile/:userId?' render={() => <ProfileContainer/>}/>
                 <Route path='/dialogs' render={() => <DialogsContainer/>}/>
                 <Route path='/news' render={() => <NewsContainer/>}/>
                 <Route path='/users' render={() => <UsersPageContainer/>}/>

@@ -24,7 +24,7 @@ const News = (props) => {
             <div>
                 {catsElement}
             </div>
-            <button onClick={onClickCats}>Ещё пост</button>
+            <button onClick={onClickCats}>Позвать котов</button>
         </div>
     );
 }

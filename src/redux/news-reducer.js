@@ -1,40 +1,22 @@
 const ADD_CATS = "ADD-CATS"
-// const url = "https://aws.random.cat/meow"
 
 let initialState = {
-    catsData: []
+    catsData: [],
 }
-
-// async function fetchHandler() {
-//     try {
-//         const response = await fetch(url)
-//         const data = await response.json()
-//         let newPostCats = {
-//             id: 7,
-//             imgSrc: data.file
-//         }
-//         initialState.catsData.push(newPostCats);
-//     } catch (e) {
-//         console.error(e)
-//     }
-// }
 
 const newsReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_CATS:
-            return {
-                ...state,
-                catsData: [...state.catsData, {
-                    id: 7,
-                    imgSrc: 'https://static.toiimg.com/thumb/79170990.cms?width=680&height=512&imgsize=993764'
-                }]
-            }
+            console.log(action.src)
+            let newCat = {
+                id: 4,
+                imgSrc: action.src,
+            };
+            return {...state, imgSrc: action.src,catsData: [...state.catsData, newCat]}
         default:
             return state;
     }
 }
-export const addCatsPostCreator = () => ({
-    type: ADD_CATS
-})
+export const addCatsPostCreator = (src) => ({type: ADD_CATS, src})
 
 export default newsReducer;

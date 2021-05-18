@@ -38,7 +38,17 @@
       <recent name="D:\JS\inass\src\components\Header" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.build">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -51,6 +61,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -91,7 +102,8 @@
       <workItem from="1620978064485" duration="38084000" />
       <workItem from="1621081381173" duration="10583000" />
       <workItem from="1621141462913" duration="27774000" />
-      <workItem from="1621236881993" duration="18570000" />
+      <workItem from="1621236881993" duration="19011000" />
+      <workItem from="1621333125727" duration="21570000" />
     </task>
     <servers />
   </component>
@@ -111,22 +123,22 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="187" y="275" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1621009347619" />
-    <state width="884" height="285" key="GridCell.Tab.0.bottom" timestamp="1621272249009">
+    <state width="884" height="285" key="GridCell.Tab.0.bottom" timestamp="1621277110817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="884" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621272249009" />
-    <state width="884" height="285" key="GridCell.Tab.0.center" timestamp="1621272249009">
+    <state width="884" height="285" key="GridCell.Tab.0.bottom/0.0.1920.1050@0.0.1920.1050" timestamp="1621277110817" />
+    <state width="884" height="285" key="GridCell.Tab.0.center" timestamp="1621277110817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="884" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621272249009" />
-    <state width="884" height="285" key="GridCell.Tab.0.left" timestamp="1621272249008">
+    <state width="884" height="285" key="GridCell.Tab.0.center/0.0.1920.1050@0.0.1920.1050" timestamp="1621277110817" />
+    <state width="884" height="285" key="GridCell.Tab.0.left" timestamp="1621277110816">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="884" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621272249008" />
-    <state width="884" height="285" key="GridCell.Tab.0.right" timestamp="1621272249009">
+    <state width="884" height="285" key="GridCell.Tab.0.left/0.0.1920.1050@0.0.1920.1050" timestamp="1621277110816" />
+    <state width="884" height="285" key="GridCell.Tab.0.right" timestamp="1621277110817">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="884" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621272249009" />
+    <state width="884" height="285" key="GridCell.Tab.0.right/0.0.1920.1050@0.0.1920.1050" timestamp="1621277110817" />
     <state x="247" y="160" key="SettingsEditor" timestamp="1621242656292">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -139,10 +151,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="176" y="270" width="607" height="516" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1620992236249" />
-    <state x="66" y="247" key="run.anything.popup" timestamp="1621255016363">
+    <state x="66" y="247" key="run.anything.popup" timestamp="1621341913785">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621255016363" />
+    <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621341913785" />
     <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1621273654158">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -151,11 +163,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>37</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
           <line>48</line>
@@ -189,20 +196,59 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
           <line>14</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
           <line>62</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
           <line>26</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
+          <line>38</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>17</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>27</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>37</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>40</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>43</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>46</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
