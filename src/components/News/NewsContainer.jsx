@@ -12,7 +12,7 @@ class NewsContainer extends Component {
 
     onClickCats = (src) => {
         let tenCats = setInterval(() => {
-        axios.get('http://aws.random.cat/meow')
+        axios.get('https://aws.random.cat/meow')
             .then(response => {
                 this.props.addCatsPostCreator(response.data.file)
             });

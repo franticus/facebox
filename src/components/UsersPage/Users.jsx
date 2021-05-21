@@ -16,11 +16,13 @@ const Users = (props) => {
             <h1>Найти друзей</h1>
         </div>
         <div className={classes.pagination}>
-            {pages.slice(2300, 2310).map((p, i) => {
+            {pages.slice(0, 10).map((p, i) => {
                 return <button
                     key={i}
-                    onClick={() => {props.onPageChanged(p)}}
-                    className={props.currentPage === p ? classes.activePageNum : null}>{p-2300}</button>
+                    onClick={() => {
+                        props.onPageChanged(p)
+                    }}
+                    className={props.currentPage === p ? classes.activePageNum : null}>{p}</button>
             })} . . .
 
         </div>
@@ -38,12 +40,17 @@ const Users = (props) => {
                 </div>
                 <div>
                     {u.followed
-                        ? <button onClick={() => {
-                            props.follow(u.id)
-                        }}>Подписаться</button>
-                        : <button onClick={() => {
-                            props.unfollow(u.id)
-                        }}>Отписаться</button>}
+                        ? <button disabled={props.followingInProgress
+                            .some(id => id === u.id)}
+                                  onClick={() => {
+                                      props.unfollow(u.id)
+                                  }}>Отписаться</button>
+
+                        : <button disabled={props.followingInProgress
+                            .some(id => id === u.id)}
+                                  onClick={() => {
+                                      props.follow(u.id)
+                                  }}>Подписаться</button>}
                 </div>
             </span>
                 <span>

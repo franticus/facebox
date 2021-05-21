@@ -17,25 +17,25 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.last.introduce.type" value="LET" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Header" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JS\inass\src\assets" />
-      <recent name="D:\JS\inass\src\components\UsersPage" />
-      <recent name="D:\JS\inass\src\components\News" />
-      <recent name="D:\JS\inass\src\components\Dialogs" />
-      <recent name="D:\JS\inass\src\components\Profile\MyPosts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JS\inass\src\assets\img" />
       <recent name="D:\JS\inass\src" />
       <recent name="D:\JS\inass\src\components\Profile" />
       <recent name="D:\JS\inass\src\components\NavBar" />
       <recent name="D:\JS\inass\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS\inass\src\components\Header" />
+      <recent name="D:\JS\inass\src\assets" />
+      <recent name="D:\JS\inass\src\components\UsersPage" />
+      <recent name="D:\JS\inass\src\components\News" />
+      <recent name="D:\JS\inass\src\components\Dialogs" />
     </key>
   </component>
   <component name="RunManager" selected="npm.build">
@@ -103,7 +103,13 @@
       <workItem from="1621081381173" duration="10583000" />
       <workItem from="1621141462913" duration="27774000" />
       <workItem from="1621236881993" duration="19011000" />
-      <workItem from="1621333125727" duration="21570000" />
+      <workItem from="1621333125727" duration="25604000" />
+      <workItem from="1621365394498" duration="837000" />
+      <workItem from="1621367377856" duration="756000" />
+      <workItem from="1621368173532" duration="744000" />
+      <workItem from="1621403621283" duration="18737000" />
+      <workItem from="1621594344007" duration="596000" />
+      <workItem from="1621615054645" duration="5134000" />
     </task>
     <servers />
   </component>
@@ -155,10 +161,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621341913785" />
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1621273654158">
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1621617401133">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621273654158" />
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621617401133" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,60 +201,59 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>14</line>
+          <line>6</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>62</line>
+          <line>44</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>26</line>
+          <line>12</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
           <line>38</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>17</line>
-          <properties lambdaOrdinal="-1" />
+          <line>22</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>27</line>
-          <properties lambdaOrdinal="-1" />
+          <line>32</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>37</line>
-          <properties lambdaOrdinal="-1" />
+          <line>42</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>40</line>
-          <properties lambdaOrdinal="-1" />
+          <line>45</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>43</line>
-          <properties lambdaOrdinal="-1" />
+          <line>48</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
-          <line>46</line>
-          <properties lambdaOrdinal="-1" />
+          <line>51</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
+          <line>33</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="59" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

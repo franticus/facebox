@@ -4,9 +4,15 @@
     grid-area: h;
     background-color: #e0e2ec;
     align-items: center;
+    justify-content: space-between;
     font-size: 1.5rem;
     margin: 3px 0 0 0;
     color: #030510;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -16,13 +22,17 @@ a {
     opacity: 1;
 }
 
+.loginBlock:hover {
+    transform: rotate(5deg);
+}
+
 .header:hover {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, .1);
 }
 
 .header img {
     width: 40px;
-    margin: 20px
+    margin-right: 5px
 }
 
 @media screen and (max-width: 800px) {
@@ -32,8 +42,8 @@ a {
         font-size: 1rem;
         height: 50px;
     }
+
     .header img {
         width: 30px;
-        margin: 20px;
     }
 }
