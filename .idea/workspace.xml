@@ -109,7 +109,11 @@
       <workItem from="1621368173532" duration="744000" />
       <workItem from="1621403621283" duration="18737000" />
       <workItem from="1621594344007" duration="596000" />
-      <workItem from="1621615054645" duration="5134000" />
+      <workItem from="1621615054645" duration="5962000" />
+      <workItem from="1621845486235" duration="3826000" />
+      <workItem from="1621879704583" duration="232000" />
+      <workItem from="1621941718431" duration="6563000" />
+      <workItem from="1622014681010" duration="4712000" />
     </task>
     <servers />
   </component>
@@ -161,19 +165,14 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="66" y="247" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621341913785" />
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1621617401133">
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup" timestamp="1622017748623">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1621617401133" />
+    <state x="159" y="233" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1622017748623" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>48</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/store.js</url>
           <line>20</line>
@@ -201,22 +200,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>6</line>
+          <line>8</line>
           <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>44</line>
-          <option name="timeStamp" value="49" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/UsersPage/UsersPageContainer.jsx</url>
-          <line>12</line>
+          <line>14</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
-          <line>38</line>
+          <line>40</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
@@ -252,8 +246,23 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/redux/users-reducer.js</url>
           <line>33</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
+          <line>50</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/profile-reducer.js</url>
+          <line>53</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/components/Profile/ProfileContainer.jsx</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="65" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

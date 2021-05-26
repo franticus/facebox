@@ -20,6 +20,8 @@ const Users = (props) => {
                 return <button
                     key={i}
                     onClick={() => {
+                        console.log(props.currentPage)
+                        console.log(p)
                         props.onPageChanged(p)
                     }}
                     className={props.currentPage === p ? classes.activePageNum : null}>{p}</button>

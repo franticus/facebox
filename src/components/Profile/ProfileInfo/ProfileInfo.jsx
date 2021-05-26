@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './ProfileInfo.module.css'
 import usersImg from '../../../assets/img/user_male.png'
+import ProfileStatus from './ProgileStatus'
 
 const ProfileInfo = (props) => {
     return (
@@ -25,7 +26,7 @@ const ProfileInfo = (props) => {
                         Полное имя : <b>{props.profile.fullName}</b>
                     </div>
                     <div>
-                        Статус : {props.profile.aboutMe}
+                        <ProfileStatus status={props.profile.aboutMe} />
                     </div>
                     <div>
                         В поиске работы : {props.profile.lookingForAJob ? "ДА" : "НЕТ"}

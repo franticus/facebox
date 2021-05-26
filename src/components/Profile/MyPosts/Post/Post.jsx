@@ -5,10 +5,6 @@ import myAvatar from '../../../../assets/img/myAvatar.jpg'
 
 const Post = (props) => {
 
-    // function likeRandom(min, max) {
-    //     return Math.floor(Math.random() * (max - min) + min)
-    // }
-
     return (
         <div>
             <div className={classes.post}>
